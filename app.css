@@ -78,6 +78,15 @@ h1 {
   flex-direction: column;
   text-align: center;
 }
+.customized-button {
+  margin-left: 15%;
+  display: inline-block;
+  padding:10px;
+}
+
+.header-block {
+  display: block;
+}
 
 .pricing-plan {
   border-bottom: 1px solid #e1f1ff;
@@ -147,6 +156,10 @@ h1 {
 }
 
 @media (min-width: 900px) {
+  .header-block {
+    flex-direction: column;
+    align-items:first baseline;
+  } 
   .panel {
     flex-direction: row;
 		align-items: flex-end;
@@ -160,10 +173,10 @@ h1 {
   .pricing-plan:last-child {
     border-right: none;
   }
-  .pricing-price: {
+  .pricing-price {
     align-content: flex-end;
   }
-  .pricing-button: {
+  .pricing-button {
     align-items: flex-end;
   }
 }
